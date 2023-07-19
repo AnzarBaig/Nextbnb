@@ -22,17 +22,35 @@ interface MapProps {
 
 const Map: React.FC<MapProps> = ({ center }) => {
   return (
-    <MapContainer
-      center={(center as L.LatLngExpression) || [51, -0.09]}
-      zoom={center ? 4 : 2}
-      scrollWheelZoom={false}
-      className="h-[35vh] rounded-lg"
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      {center && <Marker position={center as L.LatLngExpression} />}
-    </MapContainer>
+    <div>
+      <p className="bg-red-100 border rounded-md p-3">
+        This Map service which is Leaflet map is not portraying the right map of India. I have complained
+        to the appropriate person (Volodymyr Agafonkin) and have already put up
+        my grievance on the official GitHub repo of Leaflet. If Leaflet fails to
+        update the correct map of India within a reasonable period of time, I
+        will use some other Map service. For the time being, here is the link to
+        the correct map of India.
+      </p>
+      <span className="block text-center p-2">
+        <a
+          href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/India-map-en.svg/640px-India-map-en.svg.png"
+          target="_blank"
+          className="bg-green-300 hover:bg-green-400 border rounded-md "
+        >
+          Map of India
+        </a>
+      </span>
+
+      <MapContainer
+        center={(center as L.LatLngExpression) || [51, -0.09]}
+        zoom={center ? 4 : 2}
+        scrollWheelZoom={false}
+        className="h-[35vh] rounded-lg"
+      >
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        {center && <Marker position={center as L.LatLngExpression} />}
+      </MapContainer>
+    </div>
   );
 };
 

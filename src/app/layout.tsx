@@ -8,11 +8,14 @@ import ToasterProvider from "./components/providers/ToasterProvider";
 import LoginModal from "./components/modals/LoginModal";
 import getCurrentUser from "./actions/getCurrentUser";
 import RentModal from "./components/modals/RentModal";
+import SearchModal from "./components/modals/SearchModal";
+
+
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NextBNB",
-  description: "Almost clone of AirBnb",
+  description: "Almost clone of NextBNB",
 };
 
 export default async function RootLayout({
@@ -25,6 +28,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ToasterProvider/>
+        <SearchModal/>
         <RentModal/>
         <LoginModal/>
         <RegisterModal/>
