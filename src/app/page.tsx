@@ -33,13 +33,13 @@ const Home = async ({searchParams}:HomeProps) => {
             gap-8
           "
         >
-          {
-            listings.map((listing: any) => {
-              return (
-                <ListingCard currentUser={currentUser} key={listing.id} data={listing} reservation={undefined} onAction={undefined} disabled={undefined} actionLabel={undefined} />
-              )
-            })
-          }
+          {listings.map((listing: any) => (
+            <ListingCard
+              currentUser={currentUser}
+              key={listing.id}
+              data={listing}
+            />
+          ))}
         </div>
       </Container>
   )
