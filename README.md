@@ -1,5 +1,6 @@
 
-# NextBNB
+# [NextBNB](https://nextbnb-v2.vercel.app)
+
 A Full Stack NextBNB, offering exceptional performance and a seamless user experience through Server Side Rendering (SSR). A optimized design that ensures ease of navigation and lightning-fast loading times while maintainer state using Zustand. Leveraging the power of SSR with Next.js 13, delivering a smooth and efficient user experience.
 
 ![nextbnb](https://github.com/AnzarBaig/Nextbnb/assets/86596090/500606f6-454c-4f41-81d9-7b492523ad9d)
