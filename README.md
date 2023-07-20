@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# NextBNB
+A Full Stack NextBNB, offering exceptional performance and a seamless user experience through Server Side Rendering (SSR). A optimized design that ensures ease of navigation and lightning-fast loading times while maintainer state using Zustand. Leveraging the power of SSR with Next.js 13, delivering a smooth and efficient user experience.
 
-First, run the development server:
+![nextbnb](https://github.com/AnzarBaig/Nextbnb/assets/86596090/500606f6-454c-4f41-81d9-7b492523ad9d)
+
+
+
+## Tech Stack
+
+- Next.js 13
+- Zustand
+- MongoDB
+- Tailwind
+- Cloudinary CDN
+- Leaflet map
+## Features
+
+- Server Side Rendering with Next.js 13 for improved performance
+- Sleek and modern design with animations and effects using Tailwind CSS
+- Protected routes using middleware
+- Credential, Google, and GitHub authentication for a seamless login process usning Next-auth
+- Image uploads with Cloudinary CDN
+- Server error handling with React Toast and calendar functionality with React Date Range
+- Booking reservation system with guest and owner reservation cancellation
+- Advanced search algorithm based on category, date range, map location, guests, rooms, and bathrooms
+- Creation and deletion of properties with advanced pricing calculation
+- Favorite system and shareable URL filters for easy sharing of search results
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/AnzarBaig/Nextbnb.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd my-project
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
+Setup Prisma
+```bash
+ npx prisma db push
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server(after you have added .env file)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project, you will need to add the following environment variables to your .env file
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`NEXTAUTH_URL =`
+
+`DATABASE_URL =`
+
+`NEXTAUTH_SECRET =`
+
+`GITHUB_ID =`
+
+`GITHUB_SECRET =`
+
+`GOOGLE_CLIENT_ID =`
+
+`GOOGLE_CLIENT_SECRET =`
+
+`NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME =`
